@@ -194,8 +194,8 @@ func stringToSpec(ja3 string, signatureAlgorithms []tls.SignatureScheme, delegat
 		SupportedProtocols: supportedProtocolsALPS,
 	}
 
-    extMap[tls.ExtensionRecordSizeLimit] = &tls.FakeRecordSizeLimitExtension{
-        Limit: recordSizeLimit,
+	extMap[tls.ExtensionRecordSizeLimit] = &tls.FakeRecordSizeLimitExtension{
+		Limit: recordSizeLimit,
 	}
 
 	var exts []tls.TLSExtension
@@ -254,7 +254,7 @@ func getExtensionBaseMap() map[uint16]tls.TLSExtension {
 		// tls.ExtensionDelegatedCredentials: &tls.DelegatedCredentialsExtension{},
 		// tls.ExtensionALPN: &tls.ALPNExtension{},
 		// tls.ExtensionALPS:         &tls.ApplicationSettingsExtension{},
-        // tls.ExtensionRecordSizeLimit:      &tls.FakeRecordSizeLimitExtension{},
+		// tls.ExtensionRecordSizeLimit:      &tls.FakeRecordSizeLimitExtension{},
 
 		tls.ExtensionSCT:                  &tls.SCTExtension{},
 		tls.ExtensionPadding:              &tls.UtlsPaddingExtension{GetPaddingLen: tls.BoringPaddingStyle},
