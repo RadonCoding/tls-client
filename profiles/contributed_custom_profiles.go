@@ -1760,11 +1760,6 @@ var WebViewTwitterAndroid = ClientProfile{
 		http2.SettingInitialWindowSize,
 		http2.SettingMaxHeaderListSize,
 	},
-	headerPriority: &http2.PriorityParam{
-		StreamDep: 1,
-		Exclusive: true,
-		Weight:    255,
-	},
 	pseudoHeaderOrder: []string{
 		":method",
 		":authority",
