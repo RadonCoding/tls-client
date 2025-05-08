@@ -21,4 +21,4 @@ require (
 	golang.org/x/text v0.20.0 // indirect
 )
 
-// replace github.com/bogdanfinn/tls-client => ../
+replace github.com/bogdanfinn/tls-client => ../
