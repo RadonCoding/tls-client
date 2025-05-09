@@ -1649,10 +1649,9 @@ var Okhttp4TwitterAndroid = ClientProfile{
 
 var WebViewTwitterAndroid = ClientProfile{
 	clientHelloId: tls.ClientHelloID{
-		Client:               "WebViewTwitterAndroid",
-		RandomExtensionOrder: false,
-		Version:              "1",
-		Seed:                 nil,
+		Client:  "WebViewTwitterAndroid",
+		Version: "1",
+		Seed:    nil,
 		SpecFactory: func() (tls.ClientHelloSpec, error) {
 			return tls.ClientHelloSpec{
 				CipherSuites: []uint16{
