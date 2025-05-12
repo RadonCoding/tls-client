@@ -1720,8 +1720,8 @@ var WebViewTwitterAndroid = ClientProfile{
 					&tls.SupportedCurvesExtension{Curves: []tls.CurveID{
 						tls.CurveID(tls.GREASE_PLACEHOLDER),
 						tls.X25519,
-						tls.CurveP256,
-						tls.CurveP384,
+						tls.CurveSECP256R1,
+						tls.CurveSECP384R1,
 					}},
 					&tls.ALPNExtension{AlpnProtocols: []string{
 						"h2",
